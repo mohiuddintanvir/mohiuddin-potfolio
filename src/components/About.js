@@ -49,7 +49,7 @@ const About = () => {
             </div>
             <br />
             <br />
-            <a href="src\assets\Mohiuddin Molla resume.pdf" download><button className="btn-primary">Download CV</button></a>
+            <a href="src\assets\Mohiuddin Molla resume  (8).pdf" download><button className="btn-primary">Download CV</button></a>
 
 
 
