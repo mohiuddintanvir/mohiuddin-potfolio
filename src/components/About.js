@@ -31,7 +31,7 @@ const About = () => {
             <div  className="p-2">
                 <div className="text-gray-400 my-3">
                     <p className="text-justify leading-7 w-11/12 mx-auto">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium consectetur cum qui expedita dolor, consequuntur dicta, tenetur illum assumenda suscipit nam libero mollitia vel! Similique excepturi ratione iste minus!
+                    I am studying business administration, I had the chance to learn about web development as part of one of my courses. My interest in web development began to expand as a result, and I began understanding the process to give it more precision. Then I  realized that JavaScript is the only thing that I find more pleasant. I want to pursue a career as a web developer because of this.
                     </p>
                 </div>
 

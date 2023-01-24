@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Navber = () => {
-  const [navdata, setnavdata] = useState(true);
+  const [sticky, setsticky] = useState(false);
   const [open, setopen] = useState(false);
 
   const manuLinks = [
@@ -30,23 +30,21 @@ const Navber = () => {
   useEffect(() => {
     window.addEventListener("Scroll", () => {
       const nav = -document.querySelector("nav");
-      window.scrollY > 0 ? setnavdata(true) : setnavdata(false);
+      window.scrollY > 0 ? setsticky(true) : setsticky(false);
     });
   }, []);
 
   return (
     <nav
-      className={`fixed w-full left-0 top-0 z-[999] ${
-        navdata ? "md:bg-black/0 bg-white/60 text-gray-900" : "text-black"
-      }`}
+      className={`fixed w-full left-0 top-0 z-[999] bg-white/60  `}
     >
-      <div className="flex  items-center justify-between">
-        <div className="mx-7">
+      <div className="flex  items-center justify-between w-[1700px]">
+        <div className="mx-7 lg:ml-40">
           <h4 className="text-4xl uppercase font-bold text-white ">
             Mo<span className="text-cyan-600">hiudd</span>in
           </h4>
         </div>
-        <div className="text-gray-900 md:block hidden px-7 py-2 font-medium bg-white/60">
+        <div className="text-gray-900 md:block hidden px-7 py-2 font-medium ">
           <ul className="flex items-center gap-1 py-2 text-lg text-black ">
             {manuLinks.map((manu, i) => (
               <li key={i} className="px-6 hover:text-cyan-600 font-semibold">

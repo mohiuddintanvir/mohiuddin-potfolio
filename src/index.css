@@ -25,3 +25,55 @@ code {
 .aboutimg::after{
 @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10;
 }
+
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .static-txt{
+  color:rgb(63, 62, 62);
+  font-size: 40px;
+  font-weight: 500;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 50px;
+  
+  
+ overflow: hidden;
+ 
+}
+
+.dynamic-txts li {
+  color: rgba(24, 199, 234, 0.807);
+  list-style: none;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(1) infinite;
+}
+@keyframes slide{
+  100%{
+   top: -360px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(17 22 75 / var(--tw-bg-opacity));
+  border-left: 2px solid rgba(24, 199, 234, 0.807);
+  animation: typing 6s steps(16) infinite;
+}
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin:0 -35px 0 35px;
+  }
+}
