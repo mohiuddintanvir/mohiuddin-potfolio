@@ -12,6 +12,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
+  background: var(--beige); 
+  
+  /*COLORS*/
+  --white: #F7F1E1;
+  --cream: #F6E6CB;
+  --dcream: #EACEA3;
+  --beige: #CDAD93;
+  --terracotta: #B9816D;
+  --dterracotta: #885444;
+  --peach: #E5AE8A;
+  --orange: #BF835A;
+  --green: #4B5243;
+  --dgreen: #2C3834;
+  
+  /*FONTS*/
+  --mono: 'source-code-pro';
+  --display: 'lust-sans';
+  
 }
 
 code {
@@ -19,7 +37,7 @@ code {
     monospace;
 }
 .btn-primary{
-  @apply  bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2
+  @apply  bg-cyan-600 font-semibold text-white md:mx-0  rounded-full py-2 px-4 flex items-center gap-2
 }
 
 .aboutimg::after{

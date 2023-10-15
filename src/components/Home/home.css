@@ -1,0 +1,153 @@
+
+
+.minip {
+    width: 600px;
+    height: 650px;
+    margin: auto;
+    background: var(--white);
+    position: relative;
+    box-shadow: 0px 0px 5px var(--terracotta);
+    background-image: url('../../img/nily.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .minip .mg {
+    width: 200%;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 250px 50px;
+    grid-template-rows: 100px 150px;
+    grid-template-areas: 
+      'clr group'
+      'clr .....';
+    transition:
+      grid-template-columns .6s linear,
+      grid-template-rows .6s linear;
+  }
+  .minip:hover .mg {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px 300px;
+    transition:
+      grid-template-columns .6s linear,
+      grid-template-rows .6s linear;
+  }
+  .minip .mg .clr {
+    grid-area: clr;
+    background: var(--green);
+  }
+  .minip .mg .group {
+    font: 10px/10px  var(--mono);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    writing-mode: vertical-lr;
+    margin-left: 40px;
+  }
+  .minip .mg .group span {
+    display: block;
+    transform: rotate(180deg);
+    transition:
+      transform .6s linear;
+  }
+  .minip:hover .mg .group span {
+    transform: rotate(270deg);
+    transition:
+      transform .6s linear;
+  }
+  
+  .minip .av {
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: var(--green);
+    background-position: top center;
+    background-size: cover;
+    transition:
+      width .6s linear,
+      height .6s linear;
+  }
+  .minip:hover .av {
+    width: 250px;
+    height: 400px;
+    transition:
+      width .6s linear,
+      height .6s linear;
+  }
+  
+  .minip .info {
+    width: 160px;
+    max-height: 100px;
+    padding: 25px;
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    background: var(--peach);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    transition: 
+      bottom .6s linear;
+  }
+  .minip:hover .info {
+    bottom: 50px;
+    transition:
+      bottom .6s linear;
+  }
+  .minip .info name {
+    display: block;
+    color: #B9816D;
+    font: 200 25px/30px var(--display);
+    text-indent: -25px;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px 25px;
+  }
+  .minip .info deets {
+    font: 10px/15px var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .minip a.plot {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    bottom: 85px;
+    left: 85px;
+    background: var(--dgreen);
+    font: 10px/10px var(--mono);
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 
+      bottom .6s linear;
+  }
+  .minip:hover a.plot {
+    bottom: 35px;
+    transition: 
+      bottom .6s linear;
+  }
+
+
+  /* Mobile */
+div .cover {
+  background-image: url('https://scontent.fdac20-1.fna.fbcdn.net/v/t1.15752-9/387331568_846746943810468_3288796400265914676_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGnhsvxTEF-32YG5Z-ADSn_RCrTh_3OdL9EKtOH_c50v97opDpM_QnYYfQ-pgtOC5bt8onB1rJAWJVpMt1O23_9&_nc_ohc=G1kHPzS1WIkAX8RhcR_&_nc_ht=scontent.fdac20-1.fna&oh=03_AdQQuTv4rF0g5N1lyNmj6tuTIOuMoFOUb4eAQQBrfrm5kw&oe=65524CF5');
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  background-position: start;
+  background-size: cover;
+}
+
+  
+ 
