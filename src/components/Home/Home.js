@@ -39,7 +39,7 @@ const Home = () => {
                 <p>University: DIU</p>
                 <p>Dept : Business Administration</p>
                 <p>Program : BBA</p>
-                <p>Major : MIS</p>
+                <p>Major : BBA</p>
               </deets>
             </div>
             <a className="plot" title="plot with jinkyu" href="/">
